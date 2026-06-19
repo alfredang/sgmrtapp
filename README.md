@@ -77,6 +77,10 @@ SGMRT
 │   ├── Services/
 │   ├── ViewModels/
 │   └── Views/
+├── scripts/                # App Store Connect submission tooling
+├── .env.example
+├── CLAUDE.md
+├── SUBMISSION.md           # App Store submission workflow
 ├── ExportOptions.plist
 ├── project.yml
 └── README.md
