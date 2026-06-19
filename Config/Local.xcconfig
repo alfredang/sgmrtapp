@@ -1,0 +1,2 @@
+LTA_ACCOUNT_KEY =
+#include? "Secrets.xcconfig"

@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FF00E9F4536340B25D45643 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA615C9508B182F5C64426 /* StationPickerView.swift */; };
+		13C9844DF6F4F0C81AE98CB9 /* RoutePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792967562670E8237146A10F /* RoutePlanner.swift */; };
+		30D926B22368543DD0FA92CB /* MRTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2387428ADBA8798898934C /* MRTNetwork.swift */; };
+		32745428F774EAB14FC7BD8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B58DD6533955F8D68C33F2 /* ContentView.swift */; };
+		415B9EEAAA54E5BE60565A67 /* LiveServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217E4090232E3C78813905F /* LiveServiceView.swift */; };
+		53F82295E0BDDE88626F771D /* SGMRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E3D1B438C20CCBEEED606 /* SGMRTApp.swift */; };
+		5BE694F6CCD16ABAFEBBC24E /* MapPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */; };
+		7A3BFDF1FF1EE1E18D58D789 /* SingaporeMRTMap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A96EA1F9D1DF6E046A84DB5 /* SingaporeMRTMap.pdf */; };
+		9C9F69F9DF4D26E64B513598 /* MRTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */; };
+		B3AE2F087C6B1908015D2CA3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0105A34612371BCBCA6FA79A /* PrivacyInfo.xcprivacy */; };
+		D056245E998E74A17CC90E8B /* LTADataMallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */; };
+		D3A8B0B2AFC23027A7FD78A5 /* RouteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */; };
+		E0653AC70C4F5015FEBE45CF /* JourneyPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9033356E331B9482B9C9FA06 /* JourneyPlannerView.swift */; };
+		EF5CE6776562393312366C52 /* JourneyPlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B9CC83D1AFE8F918864EE /* JourneyPlannerViewModel.swift */; };
+		FE36E62E9E2CF8D4BFD8D42F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9765979C3282C70813E78B8F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0105A34612371BCBCA6FA79A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0F1D1C86902495C86A8D45E8 /* SGMRT.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SGMRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTADataMallClient.swift; sourceTree = "<group>"; };
+		2A96EA1F9D1DF6E046A84DB5 /* SingaporeMRTMap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SingaporeMRTMap.pdf; sourceTree = "<group>"; };
+		2F7623370B8E23DE3F2221A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSummaryView.swift; sourceTree = "<group>"; };
+		623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPDFView.swift; sourceTree = "<group>"; };
+		792967562670E8237146A10F /* RoutePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlanner.swift; sourceTree = "<group>"; };
+		9033356E331B9482B9C9FA06 /* JourneyPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlannerView.swift; sourceTree = "<group>"; };
+		9765979C3282C70813E78B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A217E4090232E3C78813905F /* LiveServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveServiceView.swift; sourceTree = "<group>"; };
+		AD2387428ADBA8798898934C /* MRTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTNetwork.swift; sourceTree = "<group>"; };
+		AE59449701B0C0F2F2524A33 /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+		C3B58DD6533955F8D68C33F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7EA615C9508B182F5C64426 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		EA2E3D1B438C20CCBEEED606 /* SGMRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGMRTApp.swift; sourceTree = "<group>"; };
+		F01B9CC83D1AFE8F918864EE /* JourneyPlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlannerViewModel.swift; sourceTree = "<group>"; };
+		FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01A99DC099DBE56F23D26AAC = {
+			isa = PBXGroup;
+			children = (
+				7DA3AFE5EC2D5D187395AB26 /* Config */,
+				2A8884DA8001A6E7495ADAAD /* SGMRTApp */,
+				8718624C1CD375C0593965C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C021E264D173280E5BA9E6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A96EA1F9D1DF6E046A84DB5 /* SingaporeMRTMap.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A8884DA8001A6E7495ADAAD /* SGMRTApp */ = {
+			isa = PBXGroup;
+			children = (
+				9765979C3282C70813E78B8F /* Assets.xcassets */,
+				2F7623370B8E23DE3F2221A3 /* Info.plist */,
+				0105A34612371BCBCA6FA79A /* PrivacyInfo.xcprivacy */,
+				EA2E3D1B438C20CCBEEED606 /* SGMRTApp.swift */,
+				582B65D5DA536B3881327698 /* Models */,
+				0C021E264D173280E5BA9E6B /* Resources */,
+				8CD76C9DB2B3AF8D31B5B5CA /* Services */,
+				9136ED8820596EF3F5A0C839 /* ViewModels */,
+				C865DFF32CC20775B4ACEA6C /* Views */,
+			);
+			path = SGMRTApp;
+			sourceTree = "<group>";
+		};
+		582B65D5DA536B3881327698 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7DA3AFE5EC2D5D187395AB26 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AE59449701B0C0F2F2524A33 /* Local.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8718624C1CD375C0593965C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F1D1C86902495C86A8D45E8 /* SGMRT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CD76C9DB2B3AF8D31B5B5CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */,
+				AD2387428ADBA8798898934C /* MRTNetwork.swift */,
+				792967562670E8237146A10F /* RoutePlanner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9136ED8820596EF3F5A0C839 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F01B9CC83D1AFE8F918864EE /* JourneyPlannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C865DFF32CC20775B4ACEA6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3B58DD6533955F8D68C33F2 /* ContentView.swift */,
+				9033356E331B9482B9C9FA06 /* JourneyPlannerView.swift */,
+				A217E4090232E3C78813905F /* LiveServiceView.swift */,
+				623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */,
+				58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */,
+				C7EA615C9508B182F5C64426 /* StationPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BEE0CC4058473C5AE282255 /* SGMRT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CFFD1745DBA9BD2AAE1374 /* Build configuration list for PBXNativeTarget "SGMRT" */;
+			buildPhases = (
+				E87593E1DE020F29260ECC09 /* Sources */,
+				3948CFAFDE3B46807D76BC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGMRT;
+			packageProductDependencies = (
+			);
+			productName = SGMRT;
+			productReference = 0F1D1C86902495C86A8D45E8 /* SGMRT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF24807E43325CA4CF885A43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5BEE0CC4058473C5AE282255 = {
+						DevelopmentTeam = GU9WTSTX9M;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 819082084AE09B3C31E721D7 /* Build configuration list for PBXProject "SGMRT" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 01A99DC099DBE56F23D26AAC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8718624C1CD375C0593965C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BEE0CC4058473C5AE282255 /* SGMRT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3948CFAFDE3B46807D76BC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE36E62E9E2CF8D4BFD8D42F /* Assets.xcassets in Resources */,
+				B3AE2F087C6B1908015D2CA3 /* PrivacyInfo.xcprivacy in Resources */,
+				7A3BFDF1FF1EE1E18D58D789 /* SingaporeMRTMap.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E87593E1DE020F29260ECC09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32745428F774EAB14FC7BD8A /* ContentView.swift in Sources */,
+				E0653AC70C4F5015FEBE45CF /* JourneyPlannerView.swift in Sources */,
+				EF5CE6776562393312366C52 /* JourneyPlannerViewModel.swift in Sources */,
+				D056245E998E74A17CC90E8B /* LTADataMallClient.swift in Sources */,
+				415B9EEAAA54E5BE60565A67 /* LiveServiceView.swift in Sources */,
+				9C9F69F9DF4D26E64B513598 /* MRTModels.swift in Sources */,
+				30D926B22368543DD0FA92CB /* MRTNetwork.swift in Sources */,
+				5BE694F6CCD16ABAFEBBC24E /* MapPDFView.swift in Sources */,
+				13C9844DF6F4F0C81AE98CB9 /* RoutePlanner.swift in Sources */,
+				D3A8B0B2AFC23027A7FD78A5 /* RouteSummaryView.swift in Sources */,
+				53F82295E0BDDE88626F771D /* SGMRTApp.swift in Sources */,
+				0FF00E9F4536340B25D45643 /* StationPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		565AF7D0DB1F40DC72E4F20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GU9WTSTX9M;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		795FD72C106D940BBA6A83BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GU9WTSTX9M;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D80C67BB25C6178D37CE1243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE59449701B0C0F2F2524A33 /* Local.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = SGMRTApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredang.sgmrt;
+				PRODUCT_NAME = SGMRT;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				UIRequiredDeviceCapabilities = arm64;
+			};
+			name = Release;
+		};
+		FAE043C80721790EDC7DB2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE59449701B0C0F2F2524A33 /* Local.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = SGMRTApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredang.sgmrt;
+				PRODUCT_NAME = SGMRT;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				UIRequiredDeviceCapabilities = arm64;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40CFFD1745DBA9BD2AAE1374 /* Build configuration list for PBXNativeTarget "SGMRT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE043C80721790EDC7DB2C2 /* Debug */,
+				D80C67BB25C6178D37CE1243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		819082084AE09B3C31E721D7 /* Build configuration list for PBXProject "SGMRT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795FD72C106D940BBA6A83BB /* Debug */,
+				565AF7D0DB1F40DC72E4F20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF24807E43325CA4CF885A43 /* Project object */;
+}
