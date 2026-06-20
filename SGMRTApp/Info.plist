@@ -24,6 +24,8 @@
 	<false/>
 	<key>LTAAccountKey</key>
 	<string>$(LTA_ACCOUNT_KEY)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>SGMRT uses your location to find your nearest MRT station and highlight your next stop while you ride.</string>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UIRequiredDeviceCapabilities</key>

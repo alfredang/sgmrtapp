@@ -12,10 +12,16 @@
 		30D926B22368543DD0FA92CB /* MRTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2387428ADBA8798898934C /* MRTNetwork.swift */; };
 		32745428F774EAB14FC7BD8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B58DD6533955F8D68C33F2 /* ContentView.swift */; };
 		415B9EEAAA54E5BE60565A67 /* LiveServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217E4090232E3C78813905F /* LiveServiceView.swift */; };
+		4D89BC79D95ED730F4DD9094 /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C83781D18B1548D578E3B1 /* LinesView.swift */; };
 		53F82295E0BDDE88626F771D /* SGMRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E3D1B438C20CCBEEED606 /* SGMRTApp.swift */; };
+		59EB9F92278A9E525F3A1CC0 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5E57FA649E1A53E001ACD /* AboutView.swift */; };
 		5BE694F6CCD16ABAFEBBC24E /* MapPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */; };
+		6DCBB9ABEC7DF87BF963C70F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19EDF4BD24365FB3F46069 /* LocationManager.swift */; };
 		7A3BFDF1FF1EE1E18D58D789 /* SingaporeMRTMap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A96EA1F9D1DF6E046A84DB5 /* SingaporeMRTMap.pdf */; };
+		83AB902D183DD2776589B6E3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73710A56B91454F7ACE3A /* SettingsView.swift */; };
+		8AD3AD3443C654DD60EE6F6A /* MRTStationCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23425DE63F97673DB66E9AF7 /* MRTStationCoordinates.swift */; };
 		9C9F69F9DF4D26E64B513598 /* MRTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */; };
+		AA67CCF6FF6B998A7B541E17 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857C3C9B0AAC9D2CD0B97A5 /* FavoritesStore.swift */; };
 		B3AE2F087C6B1908015D2CA3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0105A34612371BCBCA6FA79A /* PrivacyInfo.xcprivacy */; };
 		D056245E998E74A17CC90E8B /* LTADataMallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */; };
 		D3A8B0B2AFC23027A7FD78A5 /* RouteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */; };
@@ -27,19 +33,25 @@
 /* Begin PBXFileReference section */
 		0105A34612371BCBCA6FA79A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		0F1D1C86902495C86A8D45E8 /* SGMRT.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SGMRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23425DE63F97673DB66E9AF7 /* MRTStationCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTStationCoordinates.swift; sourceTree = "<group>"; };
 		23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTADataMallClient.swift; sourceTree = "<group>"; };
 		2A96EA1F9D1DF6E046A84DB5 /* SingaporeMRTMap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SingaporeMRTMap.pdf; sourceTree = "<group>"; };
 		2F7623370B8E23DE3F2221A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4FD73710A56B91454F7ACE3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSummaryView.swift; sourceTree = "<group>"; };
 		623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPDFView.swift; sourceTree = "<group>"; };
 		792967562670E8237146A10F /* RoutePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlanner.swift; sourceTree = "<group>"; };
+		88F5E57FA649E1A53E001ACD /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		9033356E331B9482B9C9FA06 /* JourneyPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlannerView.swift; sourceTree = "<group>"; };
 		9765979C3282C70813E78B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A19EDF4BD24365FB3F46069 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A217E4090232E3C78813905F /* LiveServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveServiceView.swift; sourceTree = "<group>"; };
 		AD2387428ADBA8798898934C /* MRTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTNetwork.swift; sourceTree = "<group>"; };
 		AE59449701B0C0F2F2524A33 /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+		B4C83781D18B1548D578E3B1 /* LinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesView.swift; sourceTree = "<group>"; };
 		C3B58DD6533955F8D68C33F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7EA615C9508B182F5C64426 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		D857C3C9B0AAC9D2CD0B97A5 /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
 		EA2E3D1B438C20CCBEEED606 /* SGMRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGMRTApp.swift; sourceTree = "<group>"; };
 		F01B9CC83D1AFE8F918864EE /* JourneyPlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlannerViewModel.swift; sourceTree = "<group>"; };
 		FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTModels.swift; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FA11579FC5CC353DB8B6AFFA /* MRTModels.swift */,
+				23425DE63F97673DB66E9AF7 /* MRTStationCoordinates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +119,8 @@
 		8CD76C9DB2B3AF8D31B5B5CA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D857C3C9B0AAC9D2CD0B97A5 /* FavoritesStore.swift */,
+				9A19EDF4BD24365FB3F46069 /* LocationManager.swift */,
 				23ACFB01473BC82C7D018B31 /* LTADataMallClient.swift */,
 				AD2387428ADBA8798898934C /* MRTNetwork.swift */,
 				792967562670E8237146A10F /* RoutePlanner.swift */,
@@ -124,11 +139,14 @@
 		C865DFF32CC20775B4ACEA6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88F5E57FA649E1A53E001ACD /* AboutView.swift */,
 				C3B58DD6533955F8D68C33F2 /* ContentView.swift */,
 				9033356E331B9482B9C9FA06 /* JourneyPlannerView.swift */,
+				B4C83781D18B1548D578E3B1 /* LinesView.swift */,
 				A217E4090232E3C78813905F /* LiveServiceView.swift */,
 				623DDE691CD5F5EC2596A5D0 /* MapPDFView.swift */,
 				58BEF7711B9A44E8217804E5 /* RouteSummaryView.swift */,
+				4FD73710A56B91454F7ACE3A /* SettingsView.swift */,
 				C7EA615C9508B182F5C64426 /* StationPickerView.swift */,
 			);
 			path = Views;
@@ -207,17 +225,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59EB9F92278A9E525F3A1CC0 /* AboutView.swift in Sources */,
 				32745428F774EAB14FC7BD8A /* ContentView.swift in Sources */,
+				AA67CCF6FF6B998A7B541E17 /* FavoritesStore.swift in Sources */,
 				E0653AC70C4F5015FEBE45CF /* JourneyPlannerView.swift in Sources */,
 				EF5CE6776562393312366C52 /* JourneyPlannerViewModel.swift in Sources */,
 				D056245E998E74A17CC90E8B /* LTADataMallClient.swift in Sources */,
+				4D89BC79D95ED730F4DD9094 /* LinesView.swift in Sources */,
 				415B9EEAAA54E5BE60565A67 /* LiveServiceView.swift in Sources */,
+				6DCBB9ABEC7DF87BF963C70F /* LocationManager.swift in Sources */,
 				9C9F69F9DF4D26E64B513598 /* MRTModels.swift in Sources */,
 				30D926B22368543DD0FA92CB /* MRTNetwork.swift in Sources */,
+				8AD3AD3443C654DD60EE6F6A /* MRTStationCoordinates.swift in Sources */,
 				5BE694F6CCD16ABAFEBBC24E /* MapPDFView.swift in Sources */,
 				13C9844DF6F4F0C81AE98CB9 /* RoutePlanner.swift in Sources */,
 				D3A8B0B2AFC23027A7FD78A5 /* RouteSummaryView.swift in Sources */,
 				53F82295E0BDDE88626F771D /* SGMRTApp.swift in Sources */,
+				83AB902D183DD2776589B6E3 /* SettingsView.swift in Sources */,
 				0FF00E9F4536340B25D45643 /* StationPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfredang.sgmrt;
 				PRODUCT_NAME = SGMRT;
 				SDKROOT = iphoneos;
@@ -382,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfredang.sgmrt;
 				PRODUCT_NAME = SGMRT;
 				SDKROOT = iphoneos;

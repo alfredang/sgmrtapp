@@ -3,6 +3,8 @@ import Foundation
 struct MRTNetwork {
     let stations: [Station]
     let adjacency: [String: [TrackEdge]]
+    /// Stations in running order for each line (the sequence trains actually call at).
+    let lineStations: [MRTLine: [Station]]
 
     init() {
         var builder = NetworkBuilder()
@@ -47,14 +49,20 @@ struct MRTNetwork {
             "Tanjong Rhu", "Katong Park", "Tanjong Katong", "Marine Parade", "Marine Terrace", "Siglap", "Bayshore"
         ])
 
-        stations = builder.stationsByName.values.sorted { $0.name < $1.name }
+        let byName = builder.stationsByName
+        stations = byName.values.sorted { $0.name < $1.name }
         adjacency = builder.adjacency
+        lineStations = builder.lineOrder.reduce(into: [:]) { result, entry in
+            result[entry.key] = entry.value.compactMap { byName[$0] }
+        }
     }
 }
 
 private struct NetworkBuilder {
     var stationsByName: [String: Station] = [:]
     var adjacency: [String: [TrackEdge]] = [:]
+    /// Ordered station names per line, preserved as added.
+    var lineOrder: [MRTLine: [String]] = [:]
 
     mutating func add(_ line: MRTLine, _ names: [String]) {
         for name in names {
@@ -64,6 +72,10 @@ private struct NetworkBuilder {
             lines.insert(line)
             stationsByName[name] = Station(id: id, name: name, lines: lines)
         }
+
+        // The Changi Airport branch (CGL) is operationally part of the East West Line.
+        let key: MRTLine = line == .cgl ? .ewl : (line == .cel ? .ccl : line)
+        lineOrder[key, default: []].append(contentsOf: names.filter { !(lineOrder[key]?.contains($0) ?? false) })
 
         for pair in zip(names, names.dropFirst()) {
             addEdge(from: pair.0, to: pair.1, line: line)

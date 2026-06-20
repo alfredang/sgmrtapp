@@ -15,12 +15,39 @@ struct ContentView: View {
             }
 
             NavigationStack {
+                LinesView(network: viewModel.network)
+                    .navigationTitle("Lines")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .tabItem {
+                Label("Lines", systemImage: "tram.fill")
+            }
+
+            NavigationStack {
                 MapPDFView()
                     .navigationTitle("MRT Map")
                     .navigationBarTitleDisplayMode(.inline)
             }
             .tabItem {
                 Label("Map", systemImage: "map")
+            }
+
+            NavigationStack {
+                SettingsView(viewModel: viewModel)
+                    .navigationTitle("Favorites")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .tabItem {
+                Label("Favorites", systemImage: "star")
+            }
+
+            NavigationStack {
+                AboutView()
+                    .navigationTitle("About")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .tabItem {
+                Label("About", systemImage: "info.circle")
             }
         }
     }

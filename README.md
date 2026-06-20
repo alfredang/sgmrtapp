@@ -23,12 +23,15 @@ SGMRT is a native iOS app for planning trips across Singapore's MRT network. It 
 
 Key features:
 
-- Shortest-route planning between MRT stations
-- Estimated journey time, station count, and transfer count
+- Shortest-route planning between MRT stations with estimated time, station count, and transfers
 - Route step breakdown by MRT line
+- **Lines browser** — pick any line to see its stations in running order, with interchanges marked
+- **GPS live position** — detects your nearest station and flashes your next stop along the route
+- **Favorites** — save a start/end journey and auto-load it on launch
+- **About tab** showing the app version and build
 - Live train service alerts and crowd density when an LTA key is configured
 - Built-in Singapore MRT map PDF viewer
-- SwiftUI tab-based interface for route planning and map browsing
+- SwiftUI tab-based interface: Route, Lines, Map, Favorites, About
 
 ## Tech Stack
 
@@ -45,19 +48,22 @@ Key features:
 ```text
 SGMRT
 ├── SwiftUI App
-│   ├── ContentView
-│   ├── JourneyPlannerView
-│   ├── RouteSummaryView
-│   ├── LiveServiceView
+│   ├── ContentView (tabs: Route, Lines, Map, Favorites, About)
+│   ├── JourneyPlannerView + NearbyJourneyCard (GPS next stop)
+│   ├── RouteSummaryView / LiveServiceView
+│   ├── LinesView / LineStationsView (interchanges)
+│   ├── SettingsView (favorites) / AboutView (version)
 │   └── MapPDFView
 ├── View Model
 │   └── JourneyPlannerViewModel
 ├── Services
-│   ├── MRTNetwork
-│   ├── RoutePlanner
-│   └── LTADataMallClient
+│   ├── MRTNetwork / RoutePlanner
+│   ├── LTADataMallClient
+│   ├── LocationManager (nearest station from GPS)
+│   └── FavoritesStore (UserDefaults)
 ├── Models
-│   └── Stations, lines, route steps, alerts, crowd density
+│   ├── Stations, lines, route steps, alerts, crowd density
+│   └── MRTStationCoordinates
 └── Resources
     └── SingaporeMRTMap.pdf
 ```
@@ -70,21 +76,33 @@ SGMRT
 │   ├── Local.xcconfig
 │   └── Secrets.xcconfig.example
 ├── SGMRT.xcodeproj/
+├── .github/workflows/
+│   └── ios-release.yml     # CI/CD: auto build + sign + upload + submit on push to main
 ├── SGMRTApp/
 │   ├── Assets.xcassets/
-│   ├── Models/
+│   ├── Models/             # MRT models + station coordinates
 │   ├── Resources/
-│   ├── Services/
+│   ├── Services/           # network graph, route planner, LTA client, location, favorites
 │   ├── ViewModels/
-│   └── Views/
-├── scripts/                # App Store Connect submission tooling
+│   └── Views/              # Route, Lines, Map, Favorites, About
+├── ci/screenshots/         # real screenshots uploaded by CI for new versions
+├── scripts/                # App Store Connect submission + CI tooling
 ├── .env.example
+├── CHANGELOG.md            # release notes → App Store "What's New"
 ├── CLAUDE.md
 ├── SUBMISSION.md           # App Store submission workflow
 ├── ExportOptions.plist
 ├── project.yml
 └── README.md
 ```
+
+## Continuous delivery
+
+Every push to `main` triggers [`.github/workflows/ios-release.yml`](.github/workflows/ios-release.yml),
+which selects Xcode 26, signs with the distribution cert + App Store profile (from repo secrets),
+archives, uploads to App Store Connect, and submits the current `MARKETING_VERSION` for review.
+`scripts/ci_submit.py` reconciles App Store Connect to the project version — creating the next
+version when the previous one is released, or updating the pending version in place.
 
 ## Getting Started
 

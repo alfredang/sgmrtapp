@@ -18,3 +18,5 @@ Config/Secrets.xcconfig
 # App archives and exports
 *.xcarchive
 *.ipa
+build-sim/
+.playwright-mcp/
