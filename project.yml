@@ -33,6 +33,8 @@ targets:
       path: SGMRTApp/Info.plist
       properties:
         CFBundleDisplayName: SGMRT
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         ITSAppUsesNonExemptEncryption: false
         NSLocationWhenInUseUsageDescription: "SGMRT uses your location to find your nearest MRT station and highlight your next stop while you ride."
         UIRequiredDeviceCapabilities:

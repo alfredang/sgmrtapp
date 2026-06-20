@@ -129,7 +129,7 @@ def cmd_next_version(_):
 
 def cmd_wait_build(a):
     tok = token(); aid = app_id(tok)
-    for _ in range(60):
+    for _ in range(90):  # ~30 min — App Store processing is sometimes slow to index a build
         s, d = jget("GET", f"/v1/builds?filter[app]={aid}&sort=-uploadedDate&limit=10", tok)
         match = [b for b in d.get("data", []) if str(b["attributes"]["version"]) == str(a.build)]
         if match:

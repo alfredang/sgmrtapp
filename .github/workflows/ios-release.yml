@@ -99,7 +99,13 @@ jobs:
           mkdir -p "$HOME/.appstoreconnect/private_keys"
           echo "$ASC_API_PRIVATE_KEY" > "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"
           IPA=$(ls "$RUNNER_TEMP/export/"*.ipa | head -1)
-          xcrun altool --upload-app -f "$IPA" -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          # altool exits 0 even on some upload failures, so check its output explicitly.
+          set -o pipefail
+          OUT=$(xcrun altool --upload-app -f "$IPA" -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID" 2>&1) || true
+          echo "$OUT"
+          if ! echo "$OUT" | grep -q "No errors uploading"; then
+            echo "::error::altool upload did not succeed"; exit 1
+          fi
 
       - name: Wait for processing
         run: python3 scripts/ci_submit.py wait-build --build ${{ steps.ver.outputs.build }}
