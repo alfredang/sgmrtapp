@@ -33,7 +33,10 @@ jobs:
       SCHEME: SGMRT
       PROJECT: SGMRT.xcodeproj
       PROFILE_NAME: SGMRT App Store API
-      SIGN_IDENTITY: iPhone Distribution
+      # Full exact cert name — the "SGMRT App Store API" profile embeds this specific identity.
+      # (A bare "iPhone Distribution" gets normalized by Xcode 26 to the Apple Distribution cert,
+      # which is NOT in the profile, so archive fails with a cert/profile mismatch.)
+      SIGN_IDENTITY: "iPhone Distribution: Alfred Ang (GU9WTSTX9M)"
     steps:
       - uses: actions/checkout@v4
 
